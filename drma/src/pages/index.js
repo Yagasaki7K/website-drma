@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default function Home() {
     return (
         <HomeDetails>
+            <title>Dr. Marcos Alves</title>
             <div className="background"></div>
             <p>"Existe muita coisa a ser feita, porém, o dia para que tudo termine ainda chegará". <br />Marcos</p>
 
