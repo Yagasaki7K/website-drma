@@ -35,6 +35,12 @@ const FelizNatal = () => {
                     <p>SÃO OS NOSSOS SINCEROS VOTOS!!!</p>
                     <p>MARCOS ALVES</p>
                 </div>
+
+                <audio controls autoPlay>
+                    <source src="songs/celinedionhappychristmas5.mp3" type="audio/mpeg" autoPlay />
+                </audio>
+
+                <a href="/"><img src="images/bthome.gif" className="back" /></a>
             </div>
         </FelizNatalDetails>
     )
@@ -44,7 +50,7 @@ export default FelizNatal
 
 const FelizNatalDetails = styled.div`
     .background {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -96,5 +102,9 @@ const FelizNatalDetails = styled.div`
                 font-weight: bold;
             }
         }
+    }
+
+    .back {
+        margin-top: 1rem;
     }
 `

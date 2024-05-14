@@ -33,9 +33,13 @@ const HomeDetails = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 20rem;
+
+    @media (max-width: 1366px) {
+        margin-top: 8rem;
+    }
     
     .background {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
