@@ -65,11 +65,16 @@ const FelizNatalDetails = styled.div`
     .green {
         font-family: "Arial Rounded MT Bold";
         color: rgb(0, 255, 0);
+        font-weight: bold;
     }
 
     h4 {
         font-family: 'Arial';
         font-size: 2rem;
+    }
+
+    .text {
+        margin-top: 1rem;
     }
 
     .text2 {
