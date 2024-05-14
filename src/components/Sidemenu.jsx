@@ -4,17 +4,29 @@ import styled from 'styled-components'
 const SideMenu = () => {
     return (
         <SideMenuDetails>
-            <p>Boletins</p>
+            <p>Menu</p>
+            <button onClick={() => window.location.href = '/'}>Home</button>
+            <button onClick={() => window.location.href = '/feliz-natal'}>Feliz Natal</button>
+            <button onClick={() => window.location.href = '/leka-eventos'}>Leka Eventos</button>
 
-            <button>Exemplo</button>
-            <button>Exemplo</button>
-            <button>Exemplo</button>
-            <button>Exemplo</button>
+            <p>Boletins</p>
+            <button onClick={() => window.location.href = '/boletim-0105'}>Janeiro 2005</button>
+            <button>Fevereiro 2005</button>
+            <button>Março 2005</button>
+            <button>Abril 2005</button>
+            <button>Maio 2005</button>
+            <button onClick={() => window.location.href = '/boletim-0605'}>Junho 2005</button>
+            <button>Julho 2005</button>
 
             <p>Páginas</p>
-            <button>Exemplo</button>
-            <button>Exemplo</button>
-            <button>Exemplo</button>
+            <button onClick={() => window.location.href = '/marcos'}>Marcos</button>
+            <button onClick={() => window.location.href = '/lena'}>Lena</button>
+            <button onClick={() => window.location.href = '/marlon'}>Marlon</button>
+            <button onClick={() => window.location.href = '/marcelo'}>Marcelo</button>
+            <button onClick={() => window.location.href = '/marcelo'}>Thamires</button>
+            <button onClick={() => window.location.href = '/marcelo'}>Karol</button>
+            <button onClick={() => window.location.href = '/marcelo'}>Talita</button>
+            <button onClick={() => window.location.href = '/marcelo'}>Jota</button>
         </SideMenuDetails>
     )
 }
@@ -25,6 +37,7 @@ const SideMenuDetails = styled.div`
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    margin-top: 1.5rem;
 
     p {
         font-weight: bold;
