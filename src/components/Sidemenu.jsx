@@ -38,60 +38,28 @@ const SideMenuDetails = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    width: clamp(12rem, 18vw, 14rem);
-    align-self: flex-start;
-
-    @media (min-width: 1800px) {
-        width: 16rem;
-    }
-
-    @media (max-width: 960px) {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem 1rem;
-        margin-top: 0;
-    }
 
     p {
         font-weight: bold;
         font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #0f2d51;
-        margin-bottom: 0.35rem;
     }
 
     button {
         background: rgb(196,147,25);
         background: linear-gradient(0deg, rgba(196,147,25,1) 0%, rgba(255,255,255,1) 50%, rgba(196,147,25,1) 100%);
         cursor: pointer;
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 1rem;
         border-radius: 5px;
         font-size: 0.7rem;
-        width: 100%;
+        width: 10rem;
         border: 2px solid #0f2d51;
         font-weight: bold;
-        margin-bottom: 0.8rem;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-bottom: 1rem;
 
         &:hover {
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(196,147,25,1) 50%, rgba(255,255,255,1) 100%);
             color: #fff;
-            transform: translateY(-1px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
         }
     }
-    
-    @media (max-width: 960px) {
-        button {
-            flex: 1 1 9.5rem;
-            width: auto;
-        }
-    }
-`;
+`

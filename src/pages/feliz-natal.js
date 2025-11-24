@@ -49,9 +49,6 @@ const FelizNatal = () => {
 export default FelizNatal
 
 const FelizNatalDetails = styled.div`
-    min-height: 100vh;
-    padding: clamp(1.5rem, 3vw, 3rem);
-
     .background {
         position: fixed;
         top: 0;
@@ -60,9 +57,6 @@ const FelizNatalDetails = styled.div`
         height: 100%;
         background: url("images/carousel1_firstbackground.gif");
         z-index: -1;
-        background-size: cover;
-        background-position: center;
-        opacity: 0.4;
     }
 
     .main {
@@ -71,13 +65,7 @@ const FelizNatalDetails = styled.div`
         align-items: center;
         text-align: center;
         flex-direction: column;
-        margin: 2rem auto;
-        gap: clamp(0.75rem, 1.5vw, 1.25rem);
-        padding: clamp(1rem, 2vw, 2rem);
-        max-width: 960px;
-        background: rgba(255, 255, 255, 0.85);
-        border-radius: 16px;
-        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+        margin: 2rem 0;
     }
 
     .green {
@@ -88,28 +76,26 @@ const FelizNatalDetails = styled.div`
 
     h4 {
         font-family: 'Arial';
-        font-size: clamp(1.5rem, 2vw, 2.25rem);
+        font-size: 2rem;
     }
 
     .text {
-        margin-top: 0.5rem;
-        display: grid;
-        gap: 0.5rem;
+        margin-top: 1rem;
     }
 
     .text2 {
         font-weight: bold;
         color: red;
-        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        font-size: 1.2rem;
     }
 
     .text3 {
         font-weight: bold;
         color: rgb(0, 255, 0);
-        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        font-size: 1.5rem;
 
         p {
-            margin: clamp(1rem, 2vw, 1.5rem) 0;
+            margin: 2rem 0;
             font-weight: 200;
 
             &:first-child {
@@ -120,10 +106,5 @@ const FelizNatalDetails = styled.div`
 
     .back {
         margin-top: 1rem;
-        align-self: center;
     }
-    
-    audio {
-        width: min(320px, 100%);
-    }
-`;
+`
