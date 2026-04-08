@@ -1,18 +1,18 @@
 {
-  "name": "drma",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "vercel": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "commit": "bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
-  },
-  "dependencies": {
-    "next": "^14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "styled-components": "^6.1.11"
-  }
+    "name": "drma",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "vercel": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "commit": "git pull && bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+    },
+    "dependencies": {
+        "next": "^14.2.35",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
+        "styled-components": "^6.3.12"
+    }
 }
