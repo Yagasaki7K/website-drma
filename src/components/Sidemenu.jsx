@@ -38,10 +38,13 @@ const SideMenuDetails = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
+    gap: 0.4rem;
+    flex-shrink: 0;
 
     p {
         font-weight: bold;
         font-size: 0.8rem;
+        margin-top: 0.6rem;
     }
 
     button {
@@ -54,12 +57,49 @@ const SideMenuDetails = styled.div`
         width: 10rem;
         border: 2px solid #0f2d51;
         font-weight: bold;
-        margin-bottom: 1rem;
+        margin-bottom: 0.35rem;
 
         &:hover {
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(196,147,25,1) 50%, rgba(255,255,255,1) 100%);
             color: #fff;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 1rem 0.75rem;
+
+        button {
+            width: 9rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 0.75rem;
+        padding: 0.5rem 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        p {
+            width: 100%;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            margin-bottom: 0;
+            width: min(10rem, 46%);
+        }
+    }
+
+    @media (max-width: 313px) {
+        padding: 0.5rem;
+        button {
+            width: 100%;
         }
     }
 `

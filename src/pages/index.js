@@ -32,10 +32,29 @@ const HomeDetails = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    margin: 14rem auto 2rem;
+    width: min(100%, 72rem);
+    padding: 0 2rem;
+    text-align: center;
+    gap: 0.5rem;
 
     @media (max-width: 1366px) {
         margin-top: 8rem;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 6rem;
+        padding: 0 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 3.5rem;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 313px) {
+        margin-top: 2rem;
+        padding: 0 0.625rem;
     }
     
     .background {
@@ -51,9 +70,13 @@ const HomeDetails = styled.div`
     .links {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem 2rem;
     
         a {
-            margin-right: 2rem;
+            margin-right: 0;
         }
     }
 
@@ -66,13 +89,23 @@ const HomeDetails = styled.div`
 
     .imgs {
         margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 3rem;
+        justify-content: center;
 
         a {
-            margin-right: 5rem;
+            margin-right: 0;
 
             img {
                 width: 20rem;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .imgs a img {
+            width: min(18rem, 90vw);
         }
     }
 `

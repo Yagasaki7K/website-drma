@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Title = styled.h1`
   font-size: 2rem;
   font-family: 'Benguiat Bk BT';
+  text-align: center;
 `;
 
 const Subtitle = styled.p`
@@ -15,6 +16,9 @@ const Subtitle = styled.p`
 const Message = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 `;
 
 const MessageText = styled.p`
