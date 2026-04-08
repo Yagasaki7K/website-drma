@@ -65,7 +65,10 @@ const FelizNatalDetails = styled.div`
         align-items: center;
         text-align: center;
         flex-direction: column;
-        margin: 2rem 0;
+        margin: 2rem auto;
+        width: min(100%, 64rem);
+        padding: 0 1rem;
+        gap: 0.75rem;
     }
 
     .green {
@@ -81,6 +84,7 @@ const FelizNatalDetails = styled.div`
 
     .text {
         margin-top: 1rem;
+        line-height: 1.4;
     }
 
     .text2 {
@@ -106,5 +110,58 @@ const FelizNatalDetails = styled.div`
 
     .back {
         margin-top: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        h4 {
+            font-size: 1.75rem;
+        }
+
+        .text2 {
+            font-size: 1.05rem;
+        }
+
+        .text3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main {
+            margin: 1rem auto;
+            padding: 0 0.75rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        .text {
+            font-size: 0.95rem;
+        }
+
+        .text2,
+        .text3 {
+            font-size: 1rem;
+        }
+
+        .text3 p {
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 313px) {
+        .main {
+            padding: 0 0.5rem;
+        }
+
+        .text {
+            font-size: 0.85rem;
+        }
+
+        .text2,
+        .text3 {
+            font-size: 0.9rem;
+        }
     }
 `

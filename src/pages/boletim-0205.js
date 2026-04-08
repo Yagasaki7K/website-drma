@@ -25,6 +25,7 @@ export default function Boletim0205() {
             <title>Boletim Fevereiro 2005</title>
 
             <div className="main">
+                <div className="tableWrapper">
                 <table>
                     <tbody>
                         <tr>
@@ -93,6 +94,7 @@ export default function Boletim0205() {
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         </BoletimDetails >
     );
