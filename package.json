@@ -11,8 +11,8 @@
     },
     "dependencies": {
         "next": "^14.2.35",
-        "react": "^19.2.4",
-        "react-dom": "^19.2.4",
-        "styled-components": "^6.3.12"
+        "react": "^19.2.7",
+        "react-dom": "^19.2.7",
+        "styled-components": "^6.4.3"
     }
 }
